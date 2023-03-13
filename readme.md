@@ -8,7 +8,7 @@
 - [Section 1: Thanks to all Contributors](#user-content-thanks-to-all-contributors)
 
 ## Thanks to all Contributors ##
-## Contributors ✨
+## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
