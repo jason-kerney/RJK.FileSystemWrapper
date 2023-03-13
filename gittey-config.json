@@ -25,6 +25,10 @@
         {
             "name": "docs",
             "command": "booklisp ./docs/readme.md ./readme.md"
+        },
+        {
+            "name": "push",
+            "command": "gittey docs && gittey commit && git pull && gittey push"
         }
     ],
     "collaborators": []
