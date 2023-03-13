@@ -21,7 +21,7 @@ type FileEventHandlers = {
 }
 ```
 
-This allows access to a file before and after delete.
+This allows access to information about the file before and after delete.
 
 The `DirectoryEventHandlers` look very similar:
 
@@ -32,4 +32,4 @@ type DirectoryEventHandlers = {
 }
 ```
 
-And this lets you have access to a Directory before and after it is deleted.
+This allows access to the information about the directory before and after delete.

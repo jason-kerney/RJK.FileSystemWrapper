@@ -6,7 +6,8 @@
 
 - [Section 1: Introduction](#user-content-introduction)
 - [Section 2: Builder.Accessor](#user-content-builder.accessor)
-- [Section 3: Thanks to all Contributors](#user-content-thanks-to-all-contributors)
+- [Section 3: Builder.FileSystem](#user-content-builder.filesystem)
+- [Section 4: Thanks to all Contributors](#user-content-thanks-to-all-contributors)
 
 ## Introduction ##
 
@@ -51,7 +52,7 @@ type FileEventHandlers = {
 }
 ```
 
-This allows access to a file before and after delete.
+This allows access to information about the file before and after delete.
 
 The `DirectoryEventHandlers` look very similar:
 
@@ -62,7 +63,55 @@ type DirectoryEventHandlers = {
 }
 ```
 
-And this lets you have access to a Directory before and after it is deleted.
+This allows access to the information about the directory before and after delete.
+    
+    
+
+## Builder.FileSystem ##
+This is a functional wrapper around the file system objects in .NET
+
+### Get Plain Directory ###
+This will return an `IDirectoryWrapper` without event handlers configured to capture delete events.
+
+This method has the following signature:
+
+```f#
+// string -> IDirectoryWrapper
+let getPlainDirectory path : IDirectoryWrapper
+```
+    
+
+### Get Directory ###
+This returns an `IDirectoryWrapper` with events configured as you need them.
+
+This call has the following signature:
+
+```f#
+// FileEventHandlers -> DirectoryEventHandlers -> string -> IDirectoryWrapper
+let getDirectory fileEventHandlers dirEventHandlers path : IDirectoryWrapper
+```
+
+File Event Handlers looks like:
+
+```f#
+type FileEventHandlers = {
+    BeforeDelete : (IFileWrapper -> unit) option
+    AfterDelete : (IFileWrapper -> unit) option
+}
+```
+
+This allows access to the information about the file before and after delete.
+
+Directory Event Handlers looks like:
+
+```f#
+type DirectoryEventHandlers = {
+    BeforeDelete : (IDirectoryWrapper -> unit) option
+    AfterDelete : (IDirectoryWrapper -> unit) option
+}
+```
+
+This allows access to the information about the directory before and after delete.
     
     
 
