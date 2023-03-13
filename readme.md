@@ -19,7 +19,7 @@ There are two basic entry points into this library.
     
 
 ## Builder.Accessor ##
-
+This is a functional wrapper around the static .Net FileSystem calls.
 
 ### Get Plain File System ###
 This returns a `IFileSystemAccessor` with no events configured for capture.
