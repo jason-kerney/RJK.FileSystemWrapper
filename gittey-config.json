@@ -28,7 +28,7 @@
         },
         {
             "name": "push",
-            "command": "gittey docs && gittey commit && git pull && gittey push"
+            "command": "gittey docs && gittey commit && git pull && git push"
         }
     ],
     "collaborators": []
