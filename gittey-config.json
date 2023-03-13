@@ -24,7 +24,7 @@
     "aliases": [
         {
             "name": "docs",
-            "command": "booklisp ./docs/readme.md ./readme.md"
+            "command": "booklisp ./docs/_main.md ./readme.md"
         },
         {
             "name": "push",

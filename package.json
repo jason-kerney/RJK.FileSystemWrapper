@@ -13,7 +13,7 @@
     "all-contributors-cli": "^6.20.0"
   },
   "scripts": {
-    "build": "node ./node_modules/booklisp/index.js ./docs/readme.md ./readme.md"
+    "build": "node ./node_modules/booklisp/index.js ./docs/_main.md ./readme.md"
   },
   "repository": {
     "type": "git",
