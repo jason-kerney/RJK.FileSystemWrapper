@@ -1,8 +1,4 @@
-<!--bl
-    (filemeta
-        (title "Get File")
-    )
-/bl-->
+<!-- (dl (section-meta Get File)) -->
 This returns an `IFileWrapper` with the ability to configure delete event capturing.
 
 The signature for this function is:

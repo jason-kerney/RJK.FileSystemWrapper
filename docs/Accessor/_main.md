@@ -1,10 +1,13 @@
-<!--bl
-    (filemeta
-        (title "Builder.Accessor")
+<!-- (dl
+(section-meta
+    (title Builder.Accessor)
+    (include
+        (Subsection ./getPlainFileSystem.md)
+        (Subsection ./getFileSystem.md)
     )
-/bl-->
+)
+) -->
+
 This is a functional wrapper around the static .Net FileSystem calls.
-<!--bl
-    (section "./getPlainFileSystem.md")
-    (section "./getFileSystem.md")
-/bl-->
+
+<!-- (dl (content)) -->

@@ -1,12 +1,14 @@
-<!--bl
-    (filemeta
-        (title "Builder.FileSystem")
+<!-- (dl
+(section-meta
+    (title Builder.FileSystem)
+    (include
+        (Subsection ./getPlainDirectory.md)
+        (Subsection ./getDirectory.md)
+        (Subsection ./getPlainFile.md)
+        (Subsection ./getFile.md)
     )
-/bl-->
+)
+) -->
 This is a functional wrapper around the file system objects in .NET
-<!--bl
-    (section "./getPlainDirectory.md")
-    (section "./getDirectory.md")
-    (section "./getPlainFile.md")
-    (section "./getFile.md")
-/bl-->
+
+<!-- (dl (content)) -->

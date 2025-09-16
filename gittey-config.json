@@ -24,11 +24,11 @@
     "aliases": [
         {
             "name": "docs",
-            "command": "booklisp ./docs/_main.md ./readme.md"
+            "command": "node ./node_modules/doculisp/dist/index.js ./docs/_project.dlproj"
         },
         {
             "name": "push",
-            "command": "gittey docs && gittey commit && git pull && git push"
+            "command": "git pull && gittey docs && gittey commit && git push"
         }
     ],
     "collaborators": []

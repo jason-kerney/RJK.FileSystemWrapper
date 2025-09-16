@@ -1,8 +1,4 @@
-<!--bl
-    (filemeta
-        (title "Get Plain File System")
-    )
-/bl-->
+<!-- (dl (section-meta Get Plain File System)) -->
 This returns a `IFileSystemAccessor` with no events configured for capture.
 
 The signature of this method is as follows:

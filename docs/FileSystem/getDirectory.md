@@ -1,8 +1,4 @@
-<!--bl
-    (filemeta
-        (title "Get Directory")
-    )
-/bl-->
+<!-- (dl (section-meta Get Directory)) -->
 This returns an `IDirectoryWrapper` with events configured as you need them.
 
 This call has the following signature:

@@ -1,8 +1,4 @@
-<!--bl
-    (filemeta
-        (title "Get File System")
-    )
-/bl-->
+<!-- (dl (section-meta Get File System)) -->
 This returns a `IFileSystemAccessor` with events configured to be captured.
 
 This method has the following signature:

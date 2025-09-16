@@ -1,8 +1,4 @@
-<!--bl
-    (filemeta
-        (title "Introduction")
-    )
-/bl-->
+<!-- (dl (section-meta Introduction)) -->
 
 RJK.FileSystem is a functional wrapper around the .Net File System. This allows all calls to appropriately curry the parameters and work form functions.
 
